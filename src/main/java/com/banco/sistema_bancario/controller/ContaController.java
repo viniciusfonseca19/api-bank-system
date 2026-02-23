@@ -1,7 +1,7 @@
 package com.banco.sistema_bancario.controller;
 
-import com.banco.dto.conta.*;
-import com.banco.service.ContaService;
+import com.banco.sistema_bancario.dto.conta.*;
+import com.banco.sistema_bancario.service.ContaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
