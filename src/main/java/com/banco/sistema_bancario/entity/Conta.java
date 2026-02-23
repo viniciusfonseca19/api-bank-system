@@ -19,8 +19,8 @@ import java.util.UUID;
 public class Conta {
 
     @Id
-    @GeneratedValue
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(nullable = false, unique = true)
     private String numeroConta;
@@ -32,7 +32,7 @@ public class Conta {
     private TipoConta tipoConta;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "cliente_id", nullable = false)
     private Cliente cliente;
 
     private LocalDateTime dataCriacao;
