@@ -4,12 +4,11 @@ import com.banco.sistema_bancario.entity.Cliente;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Getter
 public class ClienteResponseDTO {
 
-    private UUID id;
+    private Long id;
     private String nome;
     private String cpf;
     private String email;
