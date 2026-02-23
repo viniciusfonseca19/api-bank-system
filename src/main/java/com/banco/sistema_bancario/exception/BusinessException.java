@@ -1,4 +1,4 @@
 package com.banco.sistema_bancario.exception;
 
-public class BusinessException {
+public class BusinessException extends RuntimeException {
 }
